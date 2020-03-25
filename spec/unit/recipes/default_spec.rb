@@ -26,7 +26,7 @@ describe 'kibana_cookbook::default' do
       expect { chef_run }.to_not raise_error
     end
     it 'should update source list' do
-      expect(chef_run).to update_apt('update_sources']
+      expect(chef_run).to update_apt('update_sources')
     end
     it 'apt-transport-https' do
       expect(chef_run).to install_package "apt-transport-https"
