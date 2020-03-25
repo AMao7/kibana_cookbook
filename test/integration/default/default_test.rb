@@ -17,7 +17,7 @@ end
 
 describe package('kibana') do
   it { should be_installed }
-  its('version') { should cmq '7.*' }
+  its('version') { should cmp '7.*' }
 end
 
 describe package('openjdk-8-jdk') do
